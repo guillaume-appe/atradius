@@ -24,10 +24,3 @@ b = json.loads(a)
 c = b['analyzed_text']
 #print(c)
 
-list = []
-for type in b['entities']:
-    list += [type['text']]
-
-d = len(list[1])
-e = c.find(list[1])
-print (c[e:(d+e)])
